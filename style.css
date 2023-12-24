@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #e1dacd;
+    color: #272446;
+    padding: 50px;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.info img {
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+}
+
+.about a {
+    display: inline-block;
+    font-size: 3em;
+    text-decoration: none;
+    color: #37946e;
+    font-weight: 800;
+    margin-bottom: 0.25em;
+}
+
+.about h2 {
+    font-size: 1.4em;
+}
+
+.social a {
+    color: #37946e;
+    display: inline-block;
+    margin: 0px 8px;
+}
+
+.social a i {
+    font-size: 3.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;    
+    }
+    
+    .info {
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info img {
+        width: 110px;    
+        height: 110px;
+        border-radius: 30px;
+    }
+    
+    .about a {
+        font-size: 2.5em;
+    }
+    
+    .about h2 {
+        font-size: 1.2em;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    .social a i {
+        font-size: 2.2em;
+    }
+}
